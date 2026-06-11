@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Szociológia tanuló</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="#/" aria-label="Kezdőlap">Szociológia tanuló</a>
+      <nav class="top-nav" aria-label="Fő navigáció">
+        <a href="#/">Kezdőlap</a>
+        <a href="#/utmutato">Útmutató</a>
+        <a href="#/temak">Témák</a>
+        <a href="#/top25">Top 25</a>
+        <a href="#/kartyak">Kártyák</a>
+        <a href="#/kviz">Kvíz</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Téma váltása">Sötét mód</button>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <dialog id="shortcutDialog" class="shortcut-dialog" aria-labelledby="shortcutTitle">
+      <div class="dialog-head">
+        <h2 id="shortcutTitle">Billentyűk</h2>
+        <button id="closeShortcuts" type="button" aria-label="Bezárás">Bezárás</button>
+      </div>
+      <dl class="shortcut-list">
+        <div><dt>?</dt><dd>Billentyűk megnyitása</dd></div>
+        <div><dt>Szóköz</dt><dd>Kártya fordítása</dd></div>
+        <div><dt>← / →</dt><dd>Kártyák léptetése</dd></div>
+        <div><dt>J / K</dt><dd>Kártyák léptetése</dd></div>
+        <div><dt>Enter</dt><dd>Kvízben következő kérdés</dd></div>
+      </dl>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
